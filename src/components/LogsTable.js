@@ -460,6 +460,9 @@ const LogsTable = () => {
                             }
                         >
                             <Spin spinning={loading}>
+                                <Text type="secondary">
+                                    由于日志数量较多，调用详情最多展示最近 1000 条记录；令牌额度统计不受此限制影响。
+                                </Text>
                                 <Table
                                     columns={columns}
                                     dataSource={activeTabData.logs}
